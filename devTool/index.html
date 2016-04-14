@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://hems.io/max.js/#/2 -->
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+	<title>devTool</title>
+
+	<meta name="description" content="Introduction to javascript and max/msp with javascript">
+	<meta name="author" content="henrique matias">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="./assets/reveal.min.css">
+	<link rel="stylesheet" href="./assets/serif.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="./assets/zenburn.css">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+	</script>
+	<style type="text/css"></style>
+	<link rel="stylesheet" href="./assets/paper.css" type="text/css" media="print">
+	<link rel="stylesheet" href="./assets/main.css" type="text/css" media="print">
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+	<style>
+		.reveal h1 {
+			font-size: 2.77em;
+		}
+		img {
+			border: none!important;
+		}
+		.relation span{
+			display: inline-block;
+			width: 180px;
+			margin-left: 60px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<!-- 封面 -->
+			<section>
+				<section>
+					<h1 style="font-size: 1.77em;">
+						<img style="width: 300px;border:none;" src="./images/chrome_devtools.svg" alt="Chrome DevTools Logo">
+						<br>
+						Chrome DevTools
+					</h1>
+					<p class="fragment" data-fragment-index="1">
+						卢佳波  &nbsp;&nbsp;&nbsp;前端开发
+					</p>
+				</section>
+				<section>
+					<h2>开发者工具</h2>
+					<!-- <p class="fragment" data-fragment-index="1">开发者工具</p>
+					<p class="fragment" data-fragment-index="2">审查工具</p>
+					<h3 class="fragment" data-fragment-index="2">Chrome 开发者工具的那些事</h3> -->
+				</section>
+			</section>
+
+			<!-- 是什么 -->
+			<section>
+				<section>
+					<h1 >
+						三大疑问
+					</h1>
+					<p class="fragment" data-fragment-index="1">这是什么？</p>
+					<p class="fragment" data-fragment-index="1">这有什么用？</p>
+					<p class="fragment" data-fragment-index="2">这怎么用？</p>
+				</section>
+				<section>
+					<h1 >
+						这是什么？
+					</h1>
+				</section>
+				<section>
+					<h1 >
+						这有什么用？
+					</h1>
+				</section>
+				<section>
+					<img style="width: 600px;" src="./images/girl.jpg" alt="" />
+				</section>
+				<section>
+					<img style="width: 900px;" src="./images/zhifubao.jpg" alt="" />
+				</section>
+				<section>
+					<h1 >
+						这怎么用？
+					</h1>
+				</section>
+
+			</section>
+
+			<!-- 调查 -->
+			<section>
+				<section>
+					<h1 >
+						调查
+					</h1>
+					<p class="fragment" data-fragment-index="1">需要知道 html , css , javascript 吗？</p>
+					<p class="fragment" data-fragment-index="1">当然需要</p>
+					<p class="fragment" data-fragment-index="2">需要知道很多吗？</p>
+					<p class="fragment" data-fragment-index="2">可以不需要</p>
+				</section>
+
+				<section>
+					<h1>三者的关系</h1>
+					<ul class="relation">
+						<li class="fragment" data-fragment-index="1">
+							<span>html</span> ---> <span>骨架</span>
+						</li>
+						<li class="fragment" data-fragment-index="2">
+							<span>css</span> ---> <span>皮肤</span>
+						</li>
+						<li class="fragment" data-fragment-index="3">
+							<span>javascript</span> ---> <span>神经系统</span>
+						</li>
+					</ul>
+					<!-- 有图吗 -->
+				</section>
+
+				<section>
+					<h2>html</h2>
+					<img src="./images/html.jpg" alt="">
+				</section>
+				<section>
+					<h2>css</h2>
+					<img style="width: 500px;" src="./images/css.jpg" alt="">
+				</section>
+				<section>
+					<h2>javascript</h2>
+					<img src="./images/js.jpg" alt="">
+				</section>
+			</section>
+
+
+			<!-- 召唤dev -->
+			<section>
+				<section>
+					<h1> 召唤 </h1>
+					<br />
+					<h1> Chrome DevTools </h1>
+				</section>
+				<section>
+					<h1>
+						<img style="width: 500px;" src="./images/dev-menu.png" alt="">
+					</h1>
+				</section>
+				<section>
+					<h1>
+						<img src="./images/right-menu.png" alt="">
+					</h1>
+				</section>
+				<section>
+					<ul>
+						<li>
+							<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> or F12 (Windows)
+						</li>
+						<li>
+							<kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>I</kbd> (Mac)
+						</li>
+					</ul>
+
+				</section>
+				<section>
+					<h2>COOL!</h2>
+
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1>就是为了玩</h1>
+				</section>
+				<section>
+					<h3 > 整个页面都是你的 </h3>
+					<ul>
+						<li class="fragment" data-fragment-index="1">
+							增加 contenteditable 属性
+						</li>
+						<li class="fragment" data-fragment-index="1">
+							使用css滤镜处理某些区域, -webkit-filter:blur(1px);
+						</li>
+						<li class="fragment" data-fragment-index="1">
+							看看有多 ”色”
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>图片，视频，音乐 统统都到碗里来</h3>
+				</section>
+				<section>
+					<h3 > 妈妈再也不用担心我的缓存 </h3>
+				</section>
+				<section>
+					<h3 > 动画调试 </h3>
+				</section>
+				<section>
+					<h3 > 仿佛拥有了好多设备 </h3>
+				</section>
+				<section>
+					<h3 >chrome://flags/</h3>
+				</section>
+			</section>
+
+			<!-- Elements -->
+			<!-- <section>
+				<section>
+					<h1 > Elements </h1>
+					<img src="./images/elements.jpg" alt="">
+				</section>
+				<section>
+					<h3 > 去掉网页上的小广告 </h3>
+				</section>
+				<section>
+					<h4 > 网页上这个字体很好看，是什么字体？ </h4>
+				</section>
+				<section>
+					<h3 > 获取下载链接 </h3>
+				</section>
+				<section>
+					<h3 > 获取颜色 </h3>
+				</section>
+				<section>
+					<h3 > 查看密码 </h3>
+				</section>
+				<section>
+					<h3 > 增加 contenteditable 属性</h3>
+				</section>
+				<section>
+					<h3 > $0,$1,$2,$3,$4 </h3>
+				</section>
+				<section>
+					<h3 > 使用css滤镜处理某些区域, -webkit-filter:blur(1px);</h3>
+				</section>
+				<section>
+					<h3 > 按h试试</h3>
+				</section>
+			</section> -->
+
+			<!-- Network -->
+			<!-- <section>
+				<section>
+					<h1 > Network </h1>
+					<img src="./images/network.jpg" alt="">
+				</section>
+				<section>
+					<h3 > 查看请求详情 </h3>
+				</section>
+				<section>
+					<h3 > 打开审查元素后长按刷新键 </h3>
+				</section>
+				<section>
+					<h3 > 获取资源，如图片，视频，音乐</h3>
+				</section>
+				<section>
+					<h3 >模拟网络环境</h3>
+				</section>
+				<section>
+					<h3 >复制图片的Data URI</h3>
+				</section>
+			</section> -->
+
+			<!-- Sources -->
+			<!-- <section>
+				<section>
+					<h1 > Sources </h1>
+					<img src="./images/source.jpg" alt="">
+				</section>
+				<section>
+					<h3 > 断点调试js代码 </h3>
+				</section>
+			</section> -->
+
+			<!-- Resources -->
+			<!-- <section>
+				<section>
+					<h1 > Resources </h1>
+					<img src="./images/resource.jpg" alt="">
+				</section>
+				<section>
+					<h3 > 查看cookie </h3>
+				</section>
+				<section>
+					<h3 > 查看图片 </h3>
+				</section>
+			</section> -->
+
+
+			<section>
+				<section>
+					<h1 > FAQ </h1>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1 > THANK YOU </h1>
+				</section>
+			</section>
+
+
+		</div>
+	</div>
+	<script src="./assets/head.min.js"></script>
+	<script src="./assets/reveal.min.js"></script>
+
+	<script>
+
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+
+			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+				// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+
+	</script>
+
+</body>
+
+</html>
