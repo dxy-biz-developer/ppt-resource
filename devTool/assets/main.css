@@ -1,0 +1,12 @@
+.chrome-logo {
+    width: 300px!important;
+}
+.reveal h1 {
+    font-size: 2.77em;
+}
+
+html { width: 100%; height: 100%; }
+
+body { background-color: #eee; }
+
+ul { list-style: none; }
